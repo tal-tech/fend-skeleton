@@ -7,31 +7,17 @@
     "swoole",
     "fend"
   ],
-  "authors": [
-    {
-      "name": "ChangLong.Xu",
-      "email": "xcl_rockman@qq.com",
-      "homepage": "http://www.fireidea.com",
-      "role": "Developer"
-    }
-  ],
-  "support": {
-    "email": "xcl_rockman@qq.com"
-  },
   "minimum-stability": "dev",
   "prefer-stable": true,
   "autoload": {
     "psr-4": {
-      "Fend\\": "./fend",
       "App\\": "./app"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Fend\\": "./fend",
       "App\\": "./app",
       "Test\\App\\": "./tests/app"
-
     }
   },
   "require": {
@@ -40,14 +26,7 @@
     "ext-openssl": "*",
     "ext-curl": "*",
     "smarty/smarty": "^3.1",
-    "symfony/console": "^5.1",
-    "nikic/fast-route": "^1.3"
-  },
-  "require-dev": {
-    "phpunit/phpunit": "^7.5.14",
-    "swoole/ide-helper": "~4.4.0",
-    "phpstan/phpstan": "~0.12.33",
-    "friendsofphp/php-cs-fixer": "^2.14"
+    "symfony/console": "^5.1"
   },
   "suggest": {
     "ext-swoole": "Swoole Server is Fasted plugin",
