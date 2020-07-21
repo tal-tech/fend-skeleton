@@ -11,17 +11,19 @@
   "prefer-stable": true,
   "autoload": {
     "psr-4": {
-      "App\\": "./app"
+      "App\\": "./app",
+      "Installer\\": "./installer"
     }
   },
   "autoload-dev": {
     "psr-4": {
       "App\\": "./app",
-      "Test\\App\\": "./tests/app"
+      "Test\\App\\": "./tests/app",
+      "Installer\\": "./installer"
     }
   },
   "require": {
-    "fend/fend": "~1.2.0",
+    "fend/fend": "*",
     "php": ">=7.1",
     "ext-json": "*",
     "ext-curl": "*",
@@ -36,8 +38,9 @@
     "ext-rdkafka": "for kafka communicate"
   },
   "scripts": {
-    "pre-install-cmd": "Installer\\Install::install",
-    "pre-update-cmd": "Installer\\Install::install",
+    "guild": "Installer\\Install::install",
+    "pre-install-cmd": "@guild",
+    "pre-update-cmd": "@guild",
     "fix": "php-cs-fixer fix $1",
     "analyse": "phpstan analyse --autoload-file=./vendor/autoload.php --memory-limit 1000M -l 0  $1 ",
     "optimize": "composer dump-autoload -o -a --no-dev"
