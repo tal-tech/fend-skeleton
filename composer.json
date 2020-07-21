@@ -21,9 +21,9 @@
     }
   },
   "require": {
+    "fend/fend": "~1.2.0",
     "php": ">=7.1",
     "ext-json": "*",
-    "ext-openssl": "*",
     "ext-curl": "*",
     "smarty/smarty": "^3.1",
     "symfony/console": "^5.1"
