@@ -39,8 +39,8 @@
   },
   "scripts": {
     "guild": "Installer\\Install::install",
-    "pre-install-cmd": "@guild",
-    "pre-update-cmd": "@guild",
+    "pre-install-cmd": "",
+    "pre-update-cmd": "",
     "fix": "php-cs-fixer fix $1",
     "analyse": "phpstan analyse --autoload-file=./vendor/autoload.php --memory-limit 1000M -l 0  $1 ",
     "optimize": "composer dump-autoload -o -a --no-dev"
