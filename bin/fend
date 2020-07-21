@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+
+<?php
+/**
+ * 使用symfony console组件做的服务管理
+ * 如果没有安装这个组件，可以使用这个目录下的start.php也可以
+ */
+require_once(dirname(dirname(__FILE__)) . '/init.php');
+ini_set('memory_limit', '5120M');
+
+$command = new Fend\Console\Command();
+$command->run();
