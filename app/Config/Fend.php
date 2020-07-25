@@ -14,5 +14,4 @@ return [
 
     "debug" => true, //是否开启debug模式，如果开启在网址增加query参数?wxdebug=1可以看到错误原因
     "exceptionHandle" => \Fend\ExceptionHandle\FendExceptionHandle::class, //异常处理默认类，有需要可以替换成自己的逻辑、需要继承interface
-    "baseDir" => "", //仅用于前端设置根目录使用、目前需要人工assign到模板
 ];
