@@ -4,7 +4,7 @@ namespace App\Http;
 
 use App\Model\DemoDBNCModel;
 use Fend\Di;
-use Fend\Funcs\Http;
+use Fend\Funcs\FendHttp;
 use Fend\Read;
 use Fend\Request;
 use Fend\Response;
@@ -120,7 +120,7 @@ class Index extends Template
 
     public function Curl(Request $request, Response $response)
     {
-        $res = Http::httpRequest('http://127.1.0.1:8080/', [], "get", 3000, [],
+        $res = FendHttp::httpRequest('http://127.1.0.1:8080/', [], "get", 3000, [],
             ["connect_timeout" => 111, "retry" => 3]);
         var_dump($res);
         return "";
@@ -271,10 +271,10 @@ class Index extends Template
     public function test()
     {
         $time = microtime(true);
-        $ret = Http::getUrl("127.0.0.1/111");
-        $ret = Http::getUrl("127.0.0.1/111");
-        $ret = Http::getUrl("127.0.0.1/111");
-        $ret = Http::getUrl("127.0.0.1/");
+        $ret = FendHttp::getUrl("127.0.0.1/111");
+        $ret = FendHttp::getUrl("127.0.0.1/111");
+        $ret = FendHttp::getUrl("127.0.0.1/111");
+        $ret = FendHttp::getUrl("127.0.0.1/");
         return bcsub(microtime(true), $time, 4);
     }
 
