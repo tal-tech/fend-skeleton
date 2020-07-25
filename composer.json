@@ -23,7 +23,7 @@
     }
   },
   "require": {
-    "fend/fend": "*",
+    "fend/fend": "~1.3.0",
     "php": ">=7.1",
     "ext-json": "*",
     "ext-curl": "*",
