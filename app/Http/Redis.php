@@ -71,9 +71,12 @@ class Redis
     public function zadd()
     {
         try {
-            $result = [];
             $redis = Cache::factory(Cache::CACHE_TYPE_REDIS, "default");
-            $result = $redis->zAdd("sortset-test", mt_rand(1, 1000), 'ok' . mt_rand(1, 1000));
+            mt_srand(microtime(true) * mt_rand(123,12332));
+            $score =  mt_rand(1, 1000);
+            mt_srand(microtime(true) * mt_rand(2,1133));
+            $key = 'ok' . mt_rand(1, 10100);
+            $result = $redis->zAdd("sortset-test",$score, $key);
             return json_encode(["code" => 1, "msg" => "OK", "data" => $result], JSON_PRETTY_PRINT);
 
         } catch (\Throwable $e) {
