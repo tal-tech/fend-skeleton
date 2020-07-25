@@ -27,7 +27,7 @@
     "php": ">=7.1",
     "ext-json": "*",
     "ext-curl": "*",
-    "smarty/smarty": "^3.1",
+    "smarty/smarty": "^3.1"
   },
   "suggest": {
     "ext-swoole": "Swoole Server is Fasted plugin",
