@@ -74,7 +74,7 @@ return array(
         'daemonize' => 0,//注意测试使用配置0，线上建议1
         'document_root' => SYS_ROOTDIR . '/www', // v4.4.0以下版本, 此处必须为绝对路径 注意，去掉这里能提高性能
         'enable_static_handler' => true, //注意，去掉这里能提高性能
-        //'enable_coroutine' => true,
+        'enable_coroutine' => false,
     ),
 
 
