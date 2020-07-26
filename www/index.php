@@ -105,15 +105,12 @@ try {
     switch ($e->getCode()) {
         case 404:
             $response->status(404);
-            EagleEye::isEnable() && EagleEye::setRequestLogInfo("code", 404);
             break;
         case 405:
             $response->status(405);
-            EagleEye::isEnable() && EagleEye::setRequestLogInfo("code", 405);
             break;
         default:
             $response->status(500);
-            EagleEye::isEnable() && EagleEye::setRequestLogInfo("code", 500);
             break;
     }
     //record exception log
