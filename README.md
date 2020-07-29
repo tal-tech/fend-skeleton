@@ -38,7 +38,9 @@ Fend 框架是一款以企业快速实现业务为主要目标的框架，但与
  * throw new Exception方式处理业务异常、能够快速发现异常
 
 ### Document    
-[Document](https://tal-tech.github.io/fend-doc/)
+[Document](https://tal-tech.github.io/fend-doc/) 
+
+[国内访问](https://www.yuque.com/tal-tech/fend/readme) 
 
 ### Release Note
  * Tag 1.2.x FPM/Swoole 1.10.x support FPM \<-\> Swoole 1.10.x
