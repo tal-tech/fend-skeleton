@@ -1,7 +1,7 @@
 
 <p align="center"> 
  <a href="https://tal-tech.github.io/fend-doc/" target="_blank">
-    <img src="http://static0.xesimg.com/tal-tech-pic/fend/assets/fend.png"  alt="Fend Logo" align=center />
+    <img src="http://static0.xesimg.com/tal-tech-pic/fend/assets/fend.png?raw=true"  alt="Fend Logo" align=center />
  </a> 
 </p>
 
@@ -16,6 +16,13 @@ Fend框架是一款很有历史的框架、初代发布后一直在好未来坊�
 2020年7月 开源、以此共建交流 
 
 我们崇尚 `脚踏实地、仰望星空` 精神 欢迎小伙伴一起参与开源共建
+
+<hr /> 
+ 
+## Document    
+[Document](https://tal-tech.github.io/fend-doc/) 
+
+[国内访问](https://www.yuque.com/tal-tech/fend/readme) 
  
 ## 设计方向
 
@@ -27,7 +34,6 @@ Fend 框架是一款以企业快速实现业务为主要目标的框架，但与
  * `内核设计`：高内聚简单内核，放开业务自封装空间，留下更多空间给业务
  * `开源心态`：开放公开，接受任何符合价值观源码奉献、但有严格代码审核
  
- 
 ## 功能简介
  * Swoole/FPM 双引擎平滑切换(协程版本还在整理稍晚放出)
  * 统一使用 Composer Autoload PSR4
@@ -38,19 +44,18 @@ Fend 框架是一款以企业快速实现业务为主要目标的框架，但与
  * 符合大数据挖掘设计的Trace日志，方便ELK分析、ClickHouse、HBase、实时预警
  * throw new Exception方式处理业务异常、能够快速发现异常
  
- 
-### Document    
-[Document](https://tal-tech.github.io/fend-doc/) 
+<hr /> 
 
-[国内访问](https://www.yuque.com/tal-tech/fend/readme) 
- 
- 
-### Release Note
+## Release Note
  * Tag 1.2.x FPM/Swoole 1.10.x support FPM \<-\> Swoole 1.10.x
  * Tag 1.3.x FPM/Swoole 4.5.x support FPM \<-\> Swoole Coroutine 4.5.x
  
- 
+<hr /> 
+
 ## Install for 1.2.x branch
+ 
+#### FPM Engine Start
+master is 1.2.x version 
 
 ```bash
 composer create-project fend/fend-skeleton:~1.2.0 project_name
@@ -71,13 +76,13 @@ php /bin/start.php -c app/Config/Swoole.php start
 
 browser http://127.0.0.1:9572/ 
  
- 
 ## 1.3.0 version install
 ```bash
 composer create-project fend/fend-skeleton:~1.3.0 project_name
 ```
  
- 
+<hr /> 
+
 ## Contributors
 
 |姓名|事业部|部门|
@@ -92,10 +97,11 @@ composer create-project fend/fend-skeleton:~1.3.0 project_name
 
 (其他贡献者、请详见文档鸣谢)
  
- 
+<hr /> 
+
 ## Contact us
 issue: [https://github.com/tal-tech/fend/issues](https://github.com/tal-tech/fend/issues) 
 
 加群请加微信： 
 
-![](http://static0.xesimg.com/tal-tech-pic/fend/assets/contactus.png) 
+![](http://static0.xesimg.com/tal-tech-pic/fend/assets/contactus.png)
