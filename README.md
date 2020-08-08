@@ -26,7 +26,8 @@ Fend 框架是一款以企业快速实现业务为主要目标的框架，但与
  * `持续积累`：持续积累大型互联网线上运营经验，持续探索企业实用技巧，深度来自于积累而非AOP带来的灵活性
  * `内核设计`：高内聚简单内核，放开业务自封装空间，留下更多空间给业务
  * `开源心态`：开放公开，接受任何符合价值观源码奉献、但有严格代码审核
-
+ 
+ 
 ## 功能简介
  * Swoole/FPM 双引擎平滑切换(协程版本还在整理稍晚放出)
  * 统一使用 Composer Autoload PSR4
@@ -36,16 +37,19 @@ Fend 框架是一款以企业快速实现业务为主要目标的框架，但与
  * 高速map映射路由 + FastRouter正则路由
  * 符合大数据挖掘设计的Trace日志，方便ELK分析、ClickHouse、HBase、实时预警
  * throw new Exception方式处理业务异常、能够快速发现异常
-
+ 
+ 
 ### Document    
 [Document](https://tal-tech.github.io/fend-doc/) 
 
 [国内访问](https://www.yuque.com/tal-tech/fend/readme) 
-
+ 
+ 
 ### Release Note
  * Tag 1.2.x FPM/Swoole 1.10.x support FPM \<-\> Swoole 1.10.x
  * Tag 1.3.x FPM/Swoole 4.5.x support FPM \<-\> Swoole Coroutine 4.5.x
-
+ 
+ 
 ## Install for 1.2.x branch
 
 ```bash
@@ -53,7 +57,8 @@ composer create-project fend/fend-skeleton:~1.2.0 project_name
 ```
 
 Ref [nginx.conf](nginx.conf) to configure Nginx and http://127.0.0.1/ on browser 
-
+ 
+ 
 #### Swoole Engine Start
 
 ```bash
@@ -65,12 +70,14 @@ php /bin/start.php -c app/Config/Swoole.php start
 ```
 
 browser http://127.0.0.1:9572/ 
-
+ 
+ 
 ## 1.3.0 version install
 ```bash
 composer create-project fend/fend-skeleton:~1.3.0 project_name
 ```
-
+ 
+ 
 ## 软件作者贡献列表
 
 |姓名|事业部|部门|
@@ -84,7 +91,8 @@ composer create-project fend/fend-skeleton:~1.3.0 project_name
 |陈雷|网校|互联网研发部|
 
 (其他贡献者不一一列举)
-
+ 
+ 
 ## Contact us
 issue: [https://github.com/tal-tech/fend/issues](https://github.com/tal-tech/fend/issues) 
 
